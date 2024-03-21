@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/SourceSansPro/SourceSansPro-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/SourceSansPro/SourceSansPro-Semibold.otf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/SourceSansPro/SourceSansPro-Bold.otf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ysabeau SC';
+  src: url('../assets/Ysabeau/YsabeauSC-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.swiper {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  max-height: 550px;
+  transition-timing-function: linear;
+  transition: 1s ease;
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+
+  position: initial !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 7px;
+  border-radius: 50%;
+  background: linear-gradient(90.00deg, rgb(56, 146, 245),rgb(181, 25, 244) 50%,rgb(241, 11, 208) 100%);
+}
+
+.swiper-pagination-bullet-active {
+  width: 40px;
+  border-radius: 20px;
+}
