@@ -49,8 +49,6 @@ export default function Form () {
     },
   });
 
-  const dropdownError = formik.touched["service"] && formik.errors["service"];
-
   const options = [
     { value: 'WebMobile', label: 'Web & mobile app development' },
     { value: 'QA', label: 'Quality Assurance & Testing' },
@@ -79,7 +77,7 @@ export default function Form () {
             placeholder={"The service you are interested in"}
             onChange={(option) => formik.setFieldValue("service", option?.label)}
             classNames={{
-              control: () => (`pt-3 pb-5 px-4 ${dropdownError ? "border-b-[#C60047]" : "border-b-black hover:border-b-[#3892F5]"} dark:${dropdownError ? "border-b-[#C60047]" : "border-b-white dark:hover:border-b-[#3892F5]"} border-b-[1px] text-black dark:text-[#D9D9D9]`),
+              control: () => (`pt-3 pb-5 px-4 border-b-[1px] text-black dark:text-[#D9D9D9] hover:border-b-[#3892F5] dark:hover:border-b-[#3892F5]`),
               option: () => ("py-5"),
               menu: () => ("w-full bg-white dark:bg-black"),
               dropdownIndicator: () => (""),
@@ -90,7 +88,7 @@ export default function Form () {
           <textarea
             onChange={formik.handleChange}
             id={"tellMore"}
-            className="block min-h-[80px] w-full bg-white dark:bg-black pt-7 px-4 outline-none border-b-black dark:border-b-white border-b-[1px] text-black dark:text-[#D9D9D9] placeholder-current" 
+            className="block min-h-[80px] w-full bg-white dark:bg-black pt-7 px-4 outline-none border-b-black dark:border-b-white border-b-[1px] hover:border-b-[#3892F5] dark:hover:border-b-[#3892F5] text-black dark:text-[#D9D9D9] placeholder-current" 
             placeholder="Tell us more about your project"
           />
         </div>
