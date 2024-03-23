@@ -17,8 +17,12 @@ export default function ThemeSwitch () {
 
   return (
     <button 
+      role="button"
+      aria-label="Theme switch"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="w-[50px] h-[22px] rounded-[40px] border-2 dark:border-white border-black">
+      className="w-[50px] h-[22px] rounded-[40px] border-2 dark:border-white border-black"
+      name="theme switch"
+      >
       {margins && (
         <div className={`w-[26px] h-[14px] ${margins.left} ${margins.right} bg-[#B519F4] rounded-[40px]`} />
       )}    

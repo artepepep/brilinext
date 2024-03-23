@@ -69,7 +69,7 @@ export default function Form () {
         />
         <Input formik={formik} id={"companyName"} placeholder="Your company name" />
         <div className="relative py-4">
-          <label className={`absolute top-0 left-4 ${formik.values.service ? "block" : "hidden"} text-sm`} htmlFor="service">Service</label>
+          <label className={`absolute top-0 left-4 ${formik.values.service ? "block" : "hidden"} text-sm`} htmlFor="react-select-service-input">Service</label>
           <Select
             instanceId={"service"}
             options={options} 
@@ -77,7 +77,7 @@ export default function Form () {
             placeholder={"The service you are interested in"}
             onChange={(option) => formik.setFieldValue("service", option?.label)}
             classNames={{
-              control: () => (`pt-3 pb-5 px-4 border-b-[1px] text-black dark:text-[#D9D9D9] hover:border-b-[#3892F5] dark:hover:border-b-[#3892F5]`),
+              control: () => (`pt-3 pb-5 px-4 border-b-[1px] text-black border-b-black dark:border-b-white dark:text-[#D9D9D9] hover:border-b-[#3892F5] dark:hover:border-b-[#3892F5]`),
               option: () => ("py-5"),
               menu: () => ("w-full bg-white dark:bg-black"),
               dropdownIndicator: () => (""),
