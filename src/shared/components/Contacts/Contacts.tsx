@@ -24,17 +24,20 @@ export default function Contacts ({ withIcons }: { withIcons: boolean }) {
       )}
       <div className="flex items-center gap-6">
         <Link 
-          aria-label="Brilinxoft LinkedIn" 
+          aria-label="Brilinxoft LinkedIn"
+          target="_blank" 
           href={"https://www.linkedin.com/company/brilinxoft/"}>
             <SharedSpriteSVG name="linkedIn" />
         </Link>
         <Link 
           aria-label="Brilinxoft Instagram" 
+          target="_blank"
           href={"https://www.instagram.com/brilinxoft/"}>
             <SharedSpriteSVG name="instagram" />
         </Link>
         <Link 
-          aria-label="Brilinxoft Facebook" 
+          aria-label="Brilinxoft Facebook"
+          target="_blank" 
           href={"https://www.facebook.com/share/VeNtTo1dhu8Pz5mo/"}>
             <SharedSpriteSVG name="facebook" />
         </Link>          
