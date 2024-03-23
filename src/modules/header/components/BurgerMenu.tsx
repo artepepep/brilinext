@@ -19,7 +19,7 @@ export default function BurgerMenu ({
       <Container>
         <div className="flex items-center">
           <Logotype />
-          <button onClick={closeButtonClick} className="w-8 h-8 ml-auto md:hidden">
+          <button aria-label="Close burger menu" onClick={closeButtonClick} className="w-8 h-8 ml-auto md:hidden">
             <div className="w-6 mx-auto">
               <SharedSpriteSVG name="closeButton" />
             </div>
