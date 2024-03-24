@@ -13,7 +13,7 @@ export default function HeroSection () {
           </h2>
           <p className="text-xl">We offer custom software development and outsourcing services with our team of experts.</p>
           <div className="xl:mt-5">
-            <GradientButton href="/#whatWeCanDo" text="Contact us" uppercase={false} />
+            <GradientButton type="button" href="/#whatWeCanDo" text="Contact us" uppercase={false} />
           </div>
         </div>
         <div className="hidden md:block"><Blob small={false} /></div>

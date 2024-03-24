@@ -16,14 +16,14 @@ export default function OurTeam () {
             Schedule a free consultation with one of our app development experts today!
           </p>
           <div className="hidden md:flex md:items-center md:gap-4">
-            <GradientButton href="/#whatWeCanDo" text="Contact us" uppercase={true} />
+            <GradientButton type="button" href="/#whatWeCanDo" text="Contact us" uppercase={true} />
             <TransparentButton text="Online meeting" uppercase={true} />
           </div>
         </div>
         <div className="flex flex-col gap-10 md:hidden">
           <OurTeamSLider />
           <div className="flex flex-col items-center gap-4">
-            <GradientButton href="/#whatWeCanDo" text="Contact us" uppercase={true} />
+            <GradientButton type="button" href="/#whatWeCanDo" text="Contact us" uppercase={true} />
             <TransparentButton text="Online meeting" uppercase={true} />
           </div>
         </div>

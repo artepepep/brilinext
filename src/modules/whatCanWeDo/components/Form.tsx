@@ -1,6 +1,6 @@
 "use client"
 
-import Input from "./Input";
+import { GradientButton, Input } from '@/shared/components';
 import Select from 'react-select';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
@@ -36,6 +36,7 @@ export default function Form () {
         "interested_service": values.service,
         "details": values.tellMore,
       };
+      
       setModalDisplay("flex");
       resetForm();
       
@@ -92,11 +93,7 @@ export default function Form () {
             placeholder="Tell us more about your project"
           />
         </div>
-        <button type="submit" className={`
-        text-white mt-8 md:mt-10 max-w-fit px-12 py-[14px] rounded-[20px] bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF] hover:from-100% transition-all ease-out duration-500 uppercase`
-        }>
-          send
-        </button>
+        <GradientButton type="submit" text='send' uppercase={true} />
       </div>
       <Modal 
         modalClick={() => setModalDisplay("hidden")}

@@ -1,6 +1,7 @@
 "use client"
 
 import { Contacts, Container, Logotype } from "@/shared/components";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function Footer () {
@@ -14,9 +15,15 @@ export default function Footer () {
             <Logotype />
             <div className="flex flex-col ml-auto gap-4 items-start md:flex-row md:gap-[56px]">
               <div className="flex flex-col gap-4">
-                <button className="hover:text-[#F10BD0]" onClick={() => router.push("/#services")}>Services</button>
-                <button className="hover:text-[#F10BD0]" onClick={() => router.push("/#about")}>About us</button>
-                <button className="hover:text-[#F10BD0]" onClick={() => router.push("/#whatWeCanDo")}>Contacts</button>
+                <button className="w-fit hover:text-[#F10BD0] text-left" onClick={() => router.push("/#services")}>Services</button>
+                <button className="w-fit hover:text-[#F10BD0] text-left" onClick={() => router.push("/#about")}>About us</button>
+                <button className="w-fit hover:text-[#F10BD0] text-left" onClick={() => router.push("/#whatWeCanDo")}>Contacts</button>
+                <Link
+                  className="w-fit hover:text-[#F10BD0] text-left" 
+                  href="/privacy-policy" 
+                  aria-label="Brilinxoft privacy policy">
+                  Privacy policy
+                </Link>
               </div>
               <Contacts withIcons={false} />
             </div>
