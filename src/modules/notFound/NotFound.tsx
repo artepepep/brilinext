@@ -18,7 +18,7 @@ export default function NotFound () {
           <p className="text-[14px] mt-4 mb-8 md:text-[16px] xl:text-[20px]">
             You may have followed an outdated link or the page has been moved. To return to the main page, click the button.
           </p>
-          <GradientButton href="/" text="home page" uppercase={true} />
+          <GradientButton type="button" href="/" text="home page" uppercase={true} />
         </div>
         <div className="block md:hidden">
           <Blob styles="!top-[20%]" small={true} />
