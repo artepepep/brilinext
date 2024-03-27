@@ -1,5 +1,5 @@
 import { 
-  ChooseUs, DiscussionSection, HeroSection, OurTeam, Services, Technologies, WhatCanWeDo, WhoWeAre 
+  ChooseUs, DiscussionSection, HeroSection, LatestProjects, OurTeam, Services, Technologies, WhatCanWeDo, WhoWeAre 
 } from "@/modules";
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <Services />
       <DiscussionSection />
       <Technologies />
+      <LatestProjects />
       <WhoWeAre />
       <ChooseUs />
       <OurTeam />

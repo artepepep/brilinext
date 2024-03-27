@@ -7,7 +7,6 @@ import 'swiper/css';
 import { teamArray } from '../data/teamArray';
 
 export default function OurTeamSLider () {
-
   return (
     <>
       <Swiper 

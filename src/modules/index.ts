@@ -3,6 +3,7 @@ export { default as DiscussionSection } from "./discussionSection/DiscussionSect
 export { default as Footer } from "./footer/Footer";
 export { default as Header } from "./header/Header";
 export { default as HeroSection } from "./heroSection/HeroSection";
+export { default as LatestProjects } from "./latestProjects/LatestProjects";
 export { default as NotFound } from "./notFound/NotFound";
 export { default as OurTeam } from "./ourTeam/OurTeam";
 export { default as PrivacyPolicyForm } from "./privacyPolicyForm/PrivacyPolicyForm";

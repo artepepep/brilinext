@@ -44,7 +44,7 @@ html, body {
   position: relative;
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: transparent;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -61,7 +61,7 @@ html, body {
 
 .swiper-wrapper {
   display: flex;
-  max-height: 550px;
+  height: auto;
   transition-timing-function: linear;
   transition: 1s ease;
 }
