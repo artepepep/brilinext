@@ -61,14 +61,17 @@ export default function PrivacyPolicyForm () {
                 errorText={`${formik.values.email ? "Incorrect email format" : "This field is required"}`} 
                 placeholder="Email" 
               />
-              <div className="relative">
+              <div className="relative pb-4">
                 <label className={`absolute top-0 left-4 ${formik.values.message ? "block" : "hidden"} text-sm`} htmlFor="tellMore">This field is required</label>
                 <textarea
                   onChange={formik.handleChange}
                   id={"message"}
-                  className="block min-h-[80px] w-full bg-white dark:bg-black pt-7 px-4 outline-none border-b-black dark:border-b-white border-b-[1px] hover:border-b-[#3892F5] dark:hover:border-b-[#3892F5] text-black dark:text-[#D9D9D9] placeholder-current" 
-                  placeholder="Tell us more about your project"
+                  className={`block min-h-[80px] w-full bg-white dark:bg-black pt-7 px-4 outline-none border-b-[1px] text-black dark:text-[#D9D9D9] placeholder-current ${(formik.touched["message"] && formik.errors["message"]) ? "border-b-[#C60047]" : "border-b-black hover:border-b-[#3892F5]"} dark:${(formik.touched["message"] && formik.errors["message"]) ? "border-b-[#C60047]" : "border-b-white dark:hover:border-b-[#3892F5]"}`} 
+                  placeholder="Message"
                 />
+                {formik.touched["message"] && formik.errors["message"] && (
+                  <p className="absolute right-0 bottom-0 text-[#C60047] text-xs">This field is required</p>
+                )}
               </div>
               <GradientButton type="submit" text="send" uppercase={true} />
             </div>
