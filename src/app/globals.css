@@ -64,6 +64,7 @@ html, body {
   height: auto;
   transition-timing-function: linear;
   transition: 1s ease;
+  background: transparent;
 }
 
 .swiper-pagination {
