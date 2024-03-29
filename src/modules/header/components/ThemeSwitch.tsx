@@ -9,9 +9,9 @@ export default function ThemeSwitch () {
 
   useEffect(() => {
     if (theme === 'dark') {
-      setMargins({ left: 'ml-auto', right: 'mr-1' });
+      setMargins({ left: 'mr-auto', right: 'ml-1' });
     } else {
-      setMargins({ left: 'ml-1', right: 'mr-auto' });
+      setMargins({ left: 'mr-1', right: 'ml-auto' });
     }
   }, [theme]);
 
