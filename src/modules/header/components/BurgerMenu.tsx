@@ -8,14 +8,14 @@ type Props = {
   aboutClick: MouseEventHandler<HTMLButtonElement>,
   servicesClick: MouseEventHandler<HTMLButtonElement>,
   contactsClick: MouseEventHandler<HTMLButtonElement>,
-  right: string,
+  display: string,
 }
 
 export default function BurgerMenu ({ 
-  closeButtonClick, right, aboutClick, servicesClick, contactsClick 
+  closeButtonClick, display, aboutClick, servicesClick, contactsClick 
   }: Props) {
   return (
-    <div className={`fixed flex flex-col z-10 top-0 ${right} w-full h-dvh pt-4 bg-white dark:bg-black md:hidden`}>
+    <div className={`fixed ${display} flex-col z-10 top-0 right-0 w-full h-dvh pt-4 bg-white dark:bg-black md:hidden`}>
       <Container>
         <div className="flex items-center">
           <Logotype />

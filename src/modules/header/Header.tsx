@@ -1,4 +1,4 @@
-"use client"
+ "use client"
 
 import { Container, Logotype } from "@/shared/components";
 import OpenBurgerMenuButton from "./components/OpenBurgerMenuButton";
@@ -11,11 +11,12 @@ export default function Header () {
   const router = useRouter();
 
   const [right, setRight] = useState("right-[-100%]");
+  const [display, setDisplay] = useState("hidden");
 
   const functionalButtonsHandler = (isBurger: boolean, type: "about" | "services" | "contacts") => {
     document.body.style.overflowY = "scroll";
     if (isBurger) {
-      setRight("right-[-100%]");
+      setDisplay("hidden");
 
       if (type === "about") {
         router.push("/#about"); 
@@ -36,11 +37,11 @@ export default function Header () {
   }
 
   const openButtonClick = () => {
-    setRight("right-0");
+    setDisplay("flex");
   };
 
   const closeButtonClick = () => {
-    setRight("right-[-100%]");
+    setDisplay("hidden");
   };
 
   return (
@@ -64,7 +65,7 @@ export default function Header () {
           servicesClick={() => functionalButtonsHandler(true, "services")}
           contactsClick={() => functionalButtonsHandler(true, "contacts")}
           closeButtonClick={closeButtonClick}
-          right={right}
+          display={display}
         />
       </header>
     </>

@@ -3,7 +3,6 @@ import { Footer, Header } from "@/modules";
 
 import "./globals.css";
 import { Provider } from "@/shared/components";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Brilinxoft",

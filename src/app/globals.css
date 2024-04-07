@@ -12,6 +12,7 @@ html, body {
   src: url('../assets/SourceSansPro/SourceSansPro-Regular.otf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -19,6 +20,7 @@ html, body {
   src: url('../assets/SourceSansPro/SourceSansPro-Semibold.otf') format('truetype');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -26,6 +28,7 @@ html, body {
   src: url('../assets/SourceSansPro/SourceSansPro-Bold.otf') format('truetype');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -33,6 +36,7 @@ html, body {
   src: url('../assets/Ysabeau/YsabeauSC-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 .swiper {
