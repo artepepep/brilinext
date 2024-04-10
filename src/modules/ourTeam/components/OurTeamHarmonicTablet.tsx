@@ -20,7 +20,7 @@ export default function OurTeamHarmonicTablet () {
       copy.find((specific) => {
         if (specific.width === "326px") {
           return (specific.width = "70px");
-        };
+        }
       });
         copy[Number(event.target.id)].width = "326px";
       return (
@@ -50,8 +50,9 @@ export default function OurTeamHarmonicTablet () {
           {cardsWidth[index].width !== "326px" && (
             <div
               onClick={(event: any) => handleCardClick(event)}
-              id={`${index}`} 
-              className="absolute flex items-start py-4 px-4 w-[500px] h-[70px] top-[215px] ml-[-215px] text-xl text-white rotate-[-90deg] uppercase cursor-pointer">
+              id={`${index}`}
+              style={{ writingMode: "vertical-rl" }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-start py-4 px-4 w-full h-full text-xl text-white rotate-180 uppercase cursor-pointer">
                 {teamElem.position}
             </div>
           )}

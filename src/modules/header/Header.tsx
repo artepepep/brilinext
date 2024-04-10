@@ -1,4 +1,4 @@
- "use client"
+"use client"
 
 import { Container, Logotype } from "@/shared/components";
 import OpenBurgerMenuButton from "./components/OpenBurgerMenuButton";
@@ -10,7 +10,6 @@ import { useRouter } from "next/navigation";
 export default function Header () {
   const router = useRouter();
 
-  const [right, setRight] = useState("right-[-100%]");
   const [display, setDisplay] = useState("hidden");
 
   const functionalButtonsHandler = (isBurger: boolean, type: "about" | "services" | "contacts") => {
