@@ -37,8 +37,8 @@ export default function Slider ({ size }: { size: "sm" | "md" | "xl" }) {
             <SwiperSlide className="rouded-[20px] bg-white dark:bg-black" key={elem.heading}>
               <Image className="h-full w-full" src={elem.image} alt={elem.heading} />
               <div className='flex flex-col mt-8 gap-6'>
-                <h2 className='text-[32px] text-transparent bg-clip-text bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF]'>{elem.heading}</h2>
-                <p>{elem.text}</p>
+                <h2 className='text-[32px] text-left text-transparent bg-clip-text bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF]'>{elem.heading}</h2>
+                <p className='text-left'>{elem.text}</p>
               </div>
             </SwiperSlide>
           ))}

@@ -22,7 +22,7 @@ export default function OurTeam () {
         </div>
         <div className="flex flex-col gap-10 md:hidden">
           <OurTeamSLider />
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex items-center justify-between">
             <GradientButton type="button" href="/#whatWeCanDo" text="Contact us" uppercase={true} />
             <TransparentButton text="Online meeting" uppercase={true} />
           </div>

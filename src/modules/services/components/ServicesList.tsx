@@ -30,7 +30,7 @@ export default function ServicesList () {
   ];
 
   return (
-    <ul className="text-center md:text-left xl:text-left">
+    <ul className="text-left">
       {services.map((service) => (
         <Service 
           number={service.number}
