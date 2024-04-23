@@ -2,7 +2,7 @@ export default function WhyChooseUs () {
   const chooseUsArray = [
     {
       heading: "Technology Expertise",
-      text: "We have an extensive and in-depth knowledge of cutting-edge technologies, which enables us to create robust and scalable software solutions. ",
+      text: "Extensive and in-depth knowledge of cutting-edge technologies enables the creation of robust and scalable software solutions.",
     },
     {
       heading: "Quality Assurance",
@@ -14,7 +14,7 @@ export default function WhyChooseUs () {
     },
     {
       heading: "Dedicated Support",
-      text: "We also provide ongoing support and maintenance services to ensure that your software solution operates smoothly and continuously improves.",
+      text: "Ongoing support and maintenance ensure your software solution operates smoothly and continuously improves.",
     }
   ]
 

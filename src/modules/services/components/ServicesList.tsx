@@ -25,7 +25,7 @@ export default function ServicesList () {
     {
       number: "05",
       heading: "AI apps & Integration",
-      text: "We build and integrate custom AI features and solutions that automate tasks, personalize experiences, and drive results, transforming workflows and boosting efficiency.",
+      text: "Build and integrate custom AI features and solutions to automate tasks, personalize experiences, drive results, transform workflows, and boost efficiency with us.",
     }
   ];
 
