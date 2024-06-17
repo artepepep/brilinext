@@ -1,10 +1,16 @@
 export { default as Blob } from "./Blob/Blob";
+export { default as Breadcrumbs } from "./Breadcrumbs/Breadcrumbs";
 export { default as Contacts } from "./Contacts/Contacts";
 export { default as Container } from "./Container/Container";
+export { default as Figures } from "./Figures/Figures";
 export { default as GradientButton } from "./GradientButton/GradientButton";
 export { default as Input } from "./Input/Input";
 export { default as Logotype } from "./Logotype/Logotype";
 export { default as Modal } from "./Modal/Modal";
+export { default as NewsNavigation } from "./NewsNavigation/NewsNavigation";
+export { default as NotFound } from "./NotFound/NotFound";
+export { default as Pagination } from "./Pagination/Pagination";
+export { default as Post } from "./Post/Post";
 export { default as Provider } from "./Provider/Provider";
 export { default as Section } from "./Section/Section";
 export { default as TransparentButton } from "./TransparentButton/TransparentButton";

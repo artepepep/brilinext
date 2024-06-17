@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 
 export default function Provider ({ children }: { children: ReactNode }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="dark">
+    <ThemeProvider attribute="class" defaultTheme={"dark"}>
       {children}
     </ThemeProvider>
   )
