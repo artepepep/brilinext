@@ -39,7 +39,7 @@ export default function DevelopmentProcess() {
               The development process of financial software consists of several key stages that guarantee
               the creation of a reliable and secure product.
             </p>
-            <GradientButton text={"Contact us"} uppercase={true} type={"link"}/>
+            <GradientButton href={"#whatWeCanDo"} text={"Contact us"} uppercase={true} type={"link"} />
           </div>
           <Blob small={false} styles={"w-[1000px] top-[-200px] left-[-300px]"}/>
           <div className={"flex flex-col gap-6 mt-12"}>

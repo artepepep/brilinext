@@ -23,7 +23,7 @@ export default function Footer () {
                 </Link>
               </div>
               <div className={"flex flex-col gap-4"}>
-                <h4 className={"font-semibold"}>Industries</h4>
+                <h2 className={"font-semibold"}>Industries</h2>
                 <Link className={"w-fit hover:text-[#F10BD0] text-left"} href={"/e-commerce"}>E-commerce</Link>
                 <Link className={"w-fit hover:text-[#F10BD0] text-left"} href={"/ai-implementation"}>AI implementation</Link>
                 <Link className={"w-fit hover:text-[#F10BD0] text-left"} href={"/edtech"}>Edtech</Link>
