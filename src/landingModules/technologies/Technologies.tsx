@@ -14,10 +14,10 @@ export default function Technologies () {
           </div>
           <div className="relative flex flex-col gap-5 xl:ml-auto">
             <div style={{
-              background: "linear-gradient(89.75deg, black 0.23%, rgba(6, 6, 6, 0) 54%, black 99.8%)",
+              background: "linear-gradient(89.75deg, #060606 0.23%, rgba(6, 6, 6, 0) 54%, #060606 99.8%)",
             }} className="hidden dark:block absolute h-full w-full z-10"></div>
             <div style={{
-              background: "linear-gradient(89.75deg, white 0.23%, rgba(250, 250, 250, 0) 54%, white 99.8%);\n",
+              background: "linear-gradient(89.75deg, #FAFAFA 0.23%, rgba(250, 250, 250, 0) 15.17%, rgba(250, 250, 250, 0) 85.36%, #FAFAFA 99.8%)",
             }} className="block dark:hidden absolute h-full w-full z-10"></div>
             <Marquee type="left" />
             <Marquee type="right" />

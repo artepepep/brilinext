@@ -17,6 +17,10 @@ const config: Config = {
         'xl': '1440px',
         '2xl': '-1px',
       },
+      colors: {
+        "white": "#FAFAFA",
+        "black": "#060606"
+      },
       animation: {
         marqueeLeft: 'marqueeLeft 25s linear infinite',
         marqueeLeft2: 'marqueeLeft2 25s linear infinite',
