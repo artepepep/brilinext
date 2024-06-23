@@ -5,27 +5,27 @@ export default function ServicesList () {
     {
       number: "01",
       heading: "Web & mobile app development",
-      text: "Streamline your business and turn your ideas into reality with our custom web and mobile app development. We craft user-centric solutions that drive results.",
+      text: "Optimize your business and turn your ideas into reality with our custom web and mobile app development. We develop user-centric solutions that get results.",
     },
     {
       number: "02",
       heading: "Quality Assurance & Testing",
-      text: "Comprehensive QA and testing uncover and eliminate bugs before launch, saving time and money to ensure software stability, security, and adherence to the highest quality standards.",
+      text: "Comprehensive quality assurance and testing finds and eliminates bugs before they go to market. This saves you time and money, ensuring your software is stable, secure, and adheres to the highest quality standards."
     },
     {
       number: "03",
       heading: "UX/UI Design",
-      text: "We provide ui/ux design that translates complex ideas into user-friendly interfaces, maximizing usability and impact that drive engagement and user satisfaction.",
+      text: "We provide UI/UX design to transform complex ideas into user-friendly interfaces, maximizing usability and impact to drive engagement and user satisfaction."
     },
     {
       number: "04",
       heading: "Technical Support",
-      text: "Our reliable technical support provides expert assistance that resolves issues quickly and efficiently, maximizing user satisfaction and ensuring your systems run smoothly.",
+      text: "Our reliable technical support provides expert assistance to quickly and effectively resolve issues, maximize user satisfaction, and keep your systems running smoothly."
     },
     {
       number: "05",
-      heading: "AI apps & Integration",
-      text: "Build and integrate custom AI features and solutions to automate tasks, personalize experiences, drive results, transform workflows, and boost efficiency with us.",
+      heading: "Artificial Intelligence Applications and Integrations",
+      text: "Join us to build and integrate custom AI capabilities and solutions to automate tasks, personalize experiences, drive results, transform workflows, and increase efficiency."
     }
   ];
 

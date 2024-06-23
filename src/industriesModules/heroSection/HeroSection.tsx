@@ -2,10 +2,10 @@ import {Blob, Container, Figures, GradientButton, Section} from "@/shared/compon
 
 type Props = {
   heading: string,
-  paragraph: string,
+  paragraphs: string[],
 }
 
-export default function HeroSection ({ heading, paragraph }: Props) {
+export default function HeroSection ({ heading, paragraphs }: Props) {
   return (
     <Section>
       <Container>
@@ -13,9 +13,11 @@ export default function HeroSection ({ heading, paragraph }: Props) {
           <h2 className={"text-[40px] font-semibold uppercase md:text-[64px]"}>
             {heading}
           </h2>
-          <p>
-            {paragraph}
-          </p>
+          <div className={"flex flex-col gap-3"}>
+            {paragraphs.map(paragraph => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
           <GradientButton href={"#whatWeCanDo"} text={"Contact us"} uppercase={true} type={"link"} />
         </div>
         <Blob small={false} styles={"top-[-170px] right-[-100px]"} />

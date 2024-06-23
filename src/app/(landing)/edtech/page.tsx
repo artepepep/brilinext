@@ -1,5 +1,5 @@
 import {Breadcrumbs} from "@/shared/components";
-import {ApplicationTypes, DevelopmentProcess, HeroSection, LearnMore} from "@/industriesModules";
+import {ApplicationTypes, DevelopmentProcess, HeroSection} from "@/industriesModules";
 import {WhatCanWeDo} from "@/landingModules";
 
 export default function Page () {
@@ -42,12 +42,12 @@ export default function Page () {
       <Breadcrumbs urls={urls} />
       <HeroSection
         heading={"Edtech"}
-        paragraph={"In today's knowledge-driven world, traditional teaching methods are struggling to keep pace. " +
-          "The rise of e-learning platforms and educational technology (EdTech) presents a transformative opportunity. " +
-          "EdTech leverages innovative technologies to create engaging and effective learning experiences, catering " +
-          "to diverse learning styles and needs. Just as FinTech revolutionized finance, EdTech disrupts the education " +
-          "sector, empowering learners and educators alike. At Brilinxoft, we understand the power of EdTech and " +
-          "specialize in crafting custom software solutions that unlock the potential of modern learning."}
+        paragraphs={["In today's knowledge-driven world, traditional teaching methods are struggling to keep pace. " +
+        "The rise of e-learning platforms and educational technology (EdTech) presents a transformative opportunity. " +
+        "EdTech leverages innovative technologies to create engaging and effective learning experiences, catering to " +
+        "diverse learning styles and needs. Just as FinTech revolutionized finance, EdTech disrupts the education " +
+        "sector, empowering learners and educators alike. At Brilinxoft, we understand the power of EdTech and " +
+        "specialize in crafting custom software solutions that unlock the potential of modern learning."]}
       />
       <ApplicationTypes
         heading={"What we can do for you"}

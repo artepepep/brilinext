@@ -1,5 +1,5 @@
 import {Breadcrumbs} from "@/shared/components";
-import {ApplicationTypes, DevelopmentProcess, HeroSection, LearnMore, SuccessStories} from "@/industriesModules";
+import {ApplicationTypes, DevelopmentProcess, HeroSection} from "@/industriesModules";
 import {WhatCanWeDo} from "@/landingModules";
 
 export default function Page () {
@@ -34,12 +34,13 @@ export default function Page () {
       <Breadcrumbs urls={urls} />
       <HeroSection
         heading={"AI implementation"}
-        paragraph={"In today's data-driven world, traditional business processes are reaching their limits. The emergence " +
-          "of Artificial Intelligence (AI) presents a transformative opportunity to streamline operations, unlock new " +
-          "insights, and gain a competitive edge. Similar to how Machine Learning revolutionized data analysis, AI " +
-          "disrupts industries across the board, empowering businesses to achieve greater efficiency and innovation. " +
-          "At Brilinxoft, we understand the power of AI and specialize in crafting custom solutions that integrate AI " +
-          "seamlessly into your workflows, maximizing its potential for your business."}
+        paragraphs={["In today's data-driven world, traditional business processes are reaching their limits. " +
+          "The emergence of Artificial Intelligence (AI) presents a transformative opportunity to streamline " +
+          "operations, unlock new insights, and gain a competitive edge. Similar to how Machine Learning " +
+          "revolutionized data analysis, AI disrupts industries across the board, empowering businesses to " +
+          "achieve greater efficiency and innovation. At Brilinxoft, we understand the power of AI and specialize " +
+          "in crafting custom solutions that integrate AI seamlessly into your workflows, maximizing its potential " +
+          "for your business."]}
       />
       <ApplicationTypes
         heading={"Here are some of the key solutions we can offer"}
