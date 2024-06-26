@@ -23,6 +23,12 @@ export default function Contacts ({ withIcons }: { withIcons: boolean }) {
         </div>
       )}
       <div className="flex items-center gap-6">
+        <Link
+          aria-label="Brilinxoft Clutch"
+          target="_blank"
+          href={"https://clutch.co/profile/brilinxoft"}>
+          <SharedSpriteSVG name="clutch" />
+        </Link>
         <Link 
           aria-label="Brilinxoft LinkedIn"
           target="_blank" 
