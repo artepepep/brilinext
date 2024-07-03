@@ -55,19 +55,19 @@ export default function FunctionalButtons (
                 className={"text-left md:text-center group-hover:text-[#F10BD0]"}>
                 Industries
               </button>
-              <div
-                className={"absolute hidden group-hover:block w-fit rounded-[20px] p-[2px] bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF]"}>
-                <div className={"flex flex-col bg-white dark:bg-black rounded-[18px]"}>
+              {/*<div*/}
+              {/*  className={"absolute hidden group-hover:block w-fit rounded-[20px] p-[2px] bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF]"}>*/}
+                <div className={"absolute top-[60px] hidden group-hover:flex flex-col bg-white dark:bg-black rounded-[20px]"}>
                   {industries.map((industry) => (
                     <Link
-                      className={"py-4 px-5 hover:text-[#F10BD0]"}
+                      className={"py-4 px-6 hover:text-[#F10BD0]"}
                       href={industry.href}
                       key={industry.name}>
                       {industry.name}
                     </Link>
                   ))}
                 </div>
-              </div>
+              {/*</div>*/}
             </div>
             <Link className="text-left md:text-center hover:text-[#F10BD0]" href={"/#whatWeCanDo"} onClick={anchorsClick}>Contacts</Link>
           </div>
