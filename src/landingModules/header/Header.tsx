@@ -10,6 +10,8 @@ export default function Header () {
   const [burgerDisplay, setBurgerDisplay] = useState("hidden");
   const [industriesSmDisplay, setIndustriesSmDisplay] = useState(false);
 
+  const [servicesSmDisplay, setServicesSmDisplay] = useState(false);
+
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -35,13 +37,13 @@ export default function Header () {
             <Logotype />
             <OpenBurgerMenuButton openButtonClick={() => setBurgerDisplay("block")} />
             <div className={"hidden ml-auto md:block"}>
-              <FunctionalButtons 
+              <FunctionalButtons
                 anchorsClick={() => burgerDisplay === "block" && setBurgerDisplay("hidden")}
               />
             </div>
           </div>
         </Container>
-        <BurgerMenu 
+        <BurgerMenu
           anchorsClick={() => burgerDisplay === "block" && setBurgerDisplay("hidden")}
           industriesSmDisplay={industriesSmDisplay}
           industriesSmClick={() => setIndustriesSmDisplay(!industriesSmDisplay)}
@@ -51,6 +53,12 @@ export default function Header () {
           }}
           closeButtonClick={() => setBurgerDisplay("hidden")}
           display={burgerDisplay}
+          servicesSmClick={() => setServicesSmDisplay(!servicesSmDisplay)}
+          servicesSmDisplay={servicesSmDisplay}
+          servicesSmLinkClick={() => {
+            setBurgerDisplay("hidden");
+            setServicesSmDisplay(!servicesSmDisplay);
+          }}
         />
       </header>
       <div className={"w-full h-20"}></div>
