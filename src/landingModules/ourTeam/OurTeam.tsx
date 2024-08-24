@@ -21,7 +21,7 @@ export default function OurTeam () {
           </div>
         </div>
         <div className="flex flex-col gap-10 md:hidden">
-          <OurTeamSlider />
+          {/*<OurTeamSlider />*/}
           <div className="flex items-center justify-between">
             <GradientButton type="button" href="/#whatWeCanDo" text="Contact us" uppercase={true} />
             <TransparentButton
@@ -33,8 +33,8 @@ export default function OurTeam () {
             />
           </div>
         </div>
-        <OurTeamHarmonicTablet />
-        <OurTeamHarmonicDesktop />
+        {/*<OurTeamHarmonicTablet />*/}
+        {/*<OurTeamHarmonicDesktop />*/}
       </Container>
     </Section>
   )

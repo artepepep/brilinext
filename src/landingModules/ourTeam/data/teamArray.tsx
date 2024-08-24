@@ -2,7 +2,6 @@ import Artem from "../images/Artem.jpg";
 import Nataliya from "../images/Nataliya.jpg";
 import Olga from "../images/Olga.jpg";
 import Orest from "../images/Orest.jpg";
-import Ruslan from "../images/Ruslan.jpg";
 
 export const teamArray = [
   {
@@ -19,11 +18,6 @@ export const teamArray = [
     name: "Natalia Yermishkina",
     position: "Head of design",
     image: Nataliya,
-  },
-  {
-    name: "Ruslan Vorozhbyt",
-    position: "Frontend expert",
-    image: Ruslan,
   },
   {
     name: "Artem Volos",
