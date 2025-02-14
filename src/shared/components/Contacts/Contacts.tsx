@@ -12,13 +12,11 @@ export default function Contacts ({ withIcons }: { withIcons: boolean }) {
           </div>
           <div className="flex items-center gap-4">
             <SharedSpriteSVG name="phone" />
-            <p>+48 723 994 740</p>
           </div>
         </div>
         ): 
       (
         <div className="flex flex-col gap-4">
-          <p>+48 723 994 740</p>
           <p>brilinxoft@gmail.com</p>
         </div>
       )}
